@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MEMORY GAME</string>
+    <string name="tv_1">Memory Game</string>
+    <string name="bt_1">GO!</string>
+    <string name="bt_win">Again</string>
+    <string name="tview_1">Score: 0</string>
+    <string name="tview_2">Score: 0</string>
+</resources>

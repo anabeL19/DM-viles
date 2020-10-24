@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Second_level"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:id="@+id/img_guitar"
+        android:layout_width="135dp"
+        android:layout_height="117dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="196dp"
+        android:layout_marginEnd="22dp"
+        app:layout_constraintEnd_toStartOf="@+id/img_piano"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/guitar" />
+
+    <ImageView
+        android:id="@+id/img_guitar1"
+        android:layout_width="135dp"
+        android:layout_height="117dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="49dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_piano"
+        app:srcCompat="@mipmap/guitar" />
+
+    <ImageView
+        android:id="@+id/img_saxophone"
+        android:layout_width="135dp"
+        android:layout_height="117dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="22dp"
+        app:layout_constraintEnd_toStartOf="@+id/img_guitar1"
+        app:layout_constraintHorizontal_bias="0.405"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_guitar"
+        app:srcCompat="@mipmap/saxophone" />
+
+    <ImageView
+        android:id="@+id/img_saxophone1"
+        android:layout_width="135dp"
+        android:layout_height="117dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="49dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_guitar1"
+        app:srcCompat="@mipmap/saxophone" />
+
+    <ImageView
+        android:id="@+id/img_piano1"
+        android:layout_width="135dp"
+        android:layout_height="117dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_saxophone"
+        app:srcCompat="@mipmap/piano" />
+
+    <ImageView
+        android:id="@+id/img_piano"
+        android:layout_width="135dp"
+        android:layout_height="117dp"
+        android:layout_marginTop="196dp"
+        android:layout_marginEnd="49dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/piano" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="298dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/level2" />
+
+    <ImageView
+        android:id="@+id/tap_2_1"
+        android:layout_width="155dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="109dp"
+        android:layout_marginEnd="17dp"
+        android:onClick="SImage1"
+        app:layout_constraintEnd_toStartOf="@+id/tap_2_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7"
+        app:srcCompat="@mipmap/tap_second" />
+
+    <ImageView
+        android:id="@+id/tap_2_2"
+        android:layout_width="155dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="108dp"
+        android:layout_marginEnd="36dp"
+        android:onClick="SImage2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tap_2_1"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7"
+        app:srcCompat="@mipmap/tap_second" />
+
+    <ImageView
+        android:id="@+id/tap_2_3"
+        android:layout_width="155dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="17dp"
+        android:onClick="SImage3"
+        app:layout_constraintEnd_toStartOf="@+id/tap_2_4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tap_2_1"
+        app:srcCompat="@mipmap/tap_second" />
+
+    <ImageView
+        android:id="@+id/tap_2_4"
+        android:layout_width="155dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="34dp"
+        android:onClick="SImage4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tap_2_3"
+        app:layout_constraintTop_toBottomOf="@+id/tap_2_2"
+        app:srcCompat="@mipmap/tap_second" />
+
+    <ImageView
+        android:id="@+id/tap_2_5"
+        android:layout_width="155dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="17dp"
+        android:onClick="SImage5"
+        app:layout_constraintEnd_toStartOf="@+id/tap_2_6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tap_2_3"
+        app:srcCompat="@mipmap/tap_second" />
+
+    <ImageView
+        android:id="@+id/tap_2_6"
+        android:layout_width="155dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="34dp"
+        android:onClick="SImage6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tap_2_5"
+        app:layout_constraintTop_toBottomOf="@+id/tap_2_4"
+        app:srcCompat="@mipmap/tap_second" />
+
+    <TextView
+        android:id="@+id/tview_2"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="179dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="172dp"
+        android:hint="@string/tview_2"
+        android:textColor="#3B167C"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+</androidx.constraintlayout.widget.ConstraintLayout>

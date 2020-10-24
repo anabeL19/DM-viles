@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".First_level"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:id="@+id/img_drum"
+        android:layout_width="135dp"
+        android:layout_height="117dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="174dp"
+        android:layout_marginEnd="21dp"
+        app:layout_constraintEnd_toStartOf="@+id/img_violin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/drum1" />
+
+    <ImageView
+        android:id="@+id/img_violin"
+        android:layout_width="135dp"
+        android:layout_height="117dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="173dp"
+        android:layout_marginEnd="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img_drum"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/violin" />
+
+    <ImageView
+        android:id="@+id/img_violin2"
+        android:layout_width="135dp"
+        android:layout_height="117dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="45dp"
+        app:layout_constraintEnd_toStartOf="@+id/img_drum2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_drum"
+        app:srcCompat="@mipmap/violin" />
+
+    <ImageView
+        android:id="@+id/img_drum2"
+        android:layout_width="135dp"
+        android:layout_height="117dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="46dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_violin"
+        app:srcCompat="@mipmap/drum1" />
+
+    <ImageView
+        android:id="@+id/tap1"
+        android:layout_width="155dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="174dp"
+        android:layout_marginEnd="42dp"
+        android:onClick="Image1"
+        app:layout_constraintEnd_toStartOf="@+id/img_violin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/tap" />
+
+    <ImageView
+        android:id="@+id/tap2"
+        android:layout_width="155dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="174dp"
+        android:layout_marginEnd="40dp"
+        android:onClick="Image2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/tap" />
+
+    <ImageView
+        android:id="@+id/tap3"
+        android:layout_width="155dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="42dp"
+        android:onClick="Image3"
+        app:layout_constraintEnd_toStartOf="@+id/tap4"
+        app:layout_constraintHorizontal_bias="0.312"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_drum"
+        app:srcCompat="@mipmap/tap" />
+
+    <ImageView
+        android:id="@+id/tap4"
+        android:layout_width="155dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="40dp"
+        android:onClick="Image4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_violin"
+        app:srcCompat="@mipmap/tap" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="298dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/level1" />
+
+    <TextView
+        android:id="@+id/tview_1"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="171dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="180dp"
+        android:hint="@string/tview_1"
+        android:textColor="#47208C"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
